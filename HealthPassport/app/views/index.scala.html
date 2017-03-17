@@ -1,0 +1,11 @@
+@(message: String)
+
+@main("Health Passport") {
+
+    @message
+	<form action=@routes.Application.data() enctype="multipart/form-data" method="post">
+	<input type="text" name="text1" placeholder="Title..."><br>
+	<input type="file" name="image"/>
+	<input type="submit" name="btn2" value="submit">
+	</form>
+}
